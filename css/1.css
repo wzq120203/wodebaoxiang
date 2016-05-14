@@ -25,12 +25,12 @@ body{font-size: 12px;font-family: "微软雅黑";}
 /*~~~~~~~~~~~~~~~~上~~~~~~~~~~~~~~~~~*/
 .top{}
 .top .header{height: 1.164444rem;line-height: 1.164444rem;padding: 0 0.648889rem;}
-.top .header h2{color: #e60012;font-size: 2em;}
-.top .header_right{padding-left: 0.444444rem;}
+.top .header h2{color: #e60012;font-size: 0.497778rem;}
+.top .header_right{}
 .top .header_right a{display: block;float: left;padding-right: 0.088889rem;}
 .top .header_right a img{width: 0.462222rem;height: 0.382222rem;margin-top: 0.377778rem;}
-.top .header_right p{font-size: 0.293333rem;}
-.top .header_right p span{color: #e60012;}
+.top .header_right p{font-size: 0.311111rem;}
+.top .header_right p span{color: #e60012;font-weight: bold;}
 
 .top ul{padding: 0 0.613333rem;}
 .top ul li{width: 4.231111rem;height: 1.715556rem;background: #fa3530;margin-right: 0.248889rem;float: left;margin-bottom: 0.248889rem;border-radius: 0.088889rem;font-weight: bold;}
@@ -65,7 +65,7 @@ body{font-size: 12px;font-family: "微软雅黑";}
 		
 	
 #box .wrap{width: 8.764444rem;height: 2.168889rem;overflow: hidden;
-		position: absolute;
+		position: relative;
 		left: 0;
 		margin-left: 0.497778rem;
 		top: 1.333333rem;
@@ -73,7 +73,7 @@ body{font-size: 12px;font-family: "微软雅黑";}
 	
 
 	
-#box .wrap ul{width: 8.764444rem;height: 2.168889rem;}
+#box .wrap ul{width: 8.764444rem;height: 2.168889rem;position: absolute;}
 
 #box .wrap ul li{width: 8.764444rem;height: 2.168889rem;float: left;overflow: hidden;}
 
@@ -81,11 +81,9 @@ body{font-size: 12px;font-family: "微软雅黑";}
 		height: 2.177778rem;
     float: left;
     position: relative;
-    background: url('http://7xoo43.com1.z0.glb.clouddn.com/心愿宝箱静态.png') center no-repeat;
-    background-size:100%;}    
+   }    
     
- #box .li_img{background: url('http://10.80.20.5:8085/html5%E4%B8%80%E7%8F%AD/chest-images/%E6%89%8B%E6%B7%98%E4%B8%87%E8%83%BD%E9%9D%99%E6%80%81.png') center no-repeat;background-size: 100%;}  
-  #box .li_img3{background: url('http://7xoo43.com1.z0.glb.clouddn.com/惊喜宝箱静态.png') center no-repeat;background-size: 100%;} 
+ 
 
 
 #box .wrap div img{width: 100%;height: 100%;}
