@@ -36,9 +36,12 @@ body{font-size: 12px;font-family: "微软雅黑";}
 .top ul li{width: 4.231111rem;height: 1.715556rem;background: #fa3530;margin-right: 0.248889rem;float: left;margin-bottom: 0.248889rem;border-radius: 0.088889rem;font-weight: bold;}
 .top ul li:nth-child(2n){margin-right: 0;}
 .top ul li:last-child{background: none;border: 0.044444rem dashed #f9a09e;width: 4.168889rem;height: 1.644444rem;font-size: 0.444444rem;color: #f9a09e;text-align: center;line-height: 1.644444rem;}
-.top .ig1{width: 1.004444rem;height: 1.191111rem;padding-left: 0.257778rem;padding-top: 0.257778rem;}
-.top .ig2{width: 1.004444rem;height: 1.191111rem;padding-left: 0.311111rem;padding-top: 0.382222rem;}
-.top .ig3{width: 1.004444rem;height: 1.191111rem;padding-left: 0.302222rem;padding-top: 0.248889rem;}
+
+.ig1, .ig2, .ig3{width: 1.004444rem;height: 1.191111rem;}
+
+.top .ig1{padding-left: 0.257778rem;padding-top: 0.257778rem;}
+.top .ig2{padding-left: 0.311111rem;padding-top: 0.382222rem;}
+.top .ig3{padding-left: 0.302222rem;padding-top: 0.248889rem;}
 .top .p{color: #fff;font-size: 0.382222rem;padding-top: 0.116667rem;padding-right: 0.711111rem;line-height: 0.666667rem;font-weight: bold;}
 
 .top .p i{font-size: 0.328889rem;padding-top: 0.213333rem;}

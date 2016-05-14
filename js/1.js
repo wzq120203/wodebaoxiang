@@ -1,18 +1,3 @@
-window.onload=function(){
-
-	var a_img2=document.getElementById('a_img2');
-	var a_img1=document.getElementById('a_img1');
-	var a_img=document.getElementById('a_img');
-
- a_img2.onclick=function () {
- 	a_img2.style.cssText='background: url(http://10.80.20.5:8085/html5%E4%B8%80%E7%8F%AD/chest-images/%E5%BD%93%E5%A4%A9%E8%B4%AD%E7%89%A9%E5%B0%B1%E9%80%81%E5%AE%9D%E7%AE%B1%E5%8A%A8%E6%80%81.gif) no-repeat;background-size: 100%;width: 1.324444rem;height: 1.066667rem;';
- }
- a_img1.onclick=function () {
- 	a_img1.style.cssText='background: url(http://10.80.20.5:8085/html5%E4%B8%80%E7%8F%AD/chest-images/%E5%BF%83%E6%84%BF%E5%AE%9D%E7%AE%B1%E5%8A%A8%E6%80%81.gif) no-repeat;background-size: 100%;width: 1.2rem;height: 1.066667rem;';
- }
- a_img.onclick=function () {
- 	a_img.style.cssText='display: block;float: right;background: url("http://10.80.20.5:8085/html5%E4%B8%80%E7%8F%AD/chest-images/%E5%BD%93%E5%A4%A9%E8%B4%AD%E7%89%A9%E5%B0%B1%E9%80%81%E5%AE%9D%E7%AE%B1%E5%8A%A8%E6%80%81.gif") no-repeat; width: 1.351111rem; height: 9.893333rem; background-size: 100%; margin-right: 0.302222rem;margin-top: 0.133333rem;';
- }
 
 
 
@@ -30,16 +15,29 @@ window.onload=function(){
 
 
 
-
 for (var i = 0; i < oImgs.length; i++) {
+	oImgs[i].bol=1;
+	oImgs[i].index=i;
+	oImgs[i].timer=null;
 	oImgs[i].onclick=function(){
-		this.src = this.src.replace("png","gif");//点击宝箱后更换成gif图
+		if (this.bol) {
+			this.bol=0;
+			var x=this.index;
+			this.src = this.src.replace("png","gif");//点击宝箱后更换成gif图
+					
+						this.timer=setTimeout(function(){
+							
+							
+								oImgs[x].src=oImgs[x].src.replace("gif","png");
+								oImgs[x].bol=1;
+
+							
+						
+						
+						},2000);
+		}
 		
-			setTimeout(function(){
-			for (var i = 0; i < oImgs.length; i++) {
-				oImgs[i].src=oImgs[i].src.replace("gif","png");
-				}
-			},2000);
+
 		
 	}
 }
@@ -146,7 +144,6 @@ wrap.onmouseleave=function () {
 
 
 
-}
 
 
 
