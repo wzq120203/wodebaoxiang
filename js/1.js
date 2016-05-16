@@ -103,17 +103,17 @@ function  prevFn() {
 
 	}
 
-picture.onmouseenter=function(){
+// picture.onmouseenter=function(){
 	
-	// prev.style.opacity='1';
-	next.style.opacity='1';
-}
-picture.onmouseleave=function () {
+// 	// prev.style.opacity='1';
+// 	next.style.opacity='1';
+// }
+// picture.onmouseleave=function () {
 	
-	// prev.style.opacity='0';
-	next.style.opacity='0';
+// 	// prev.style.opacity='0';
+// 	next.style.opacity='0';
 	
-}
+// }
 wrap.onmouseenter=function () {
 	clearInterval(timer)
 
